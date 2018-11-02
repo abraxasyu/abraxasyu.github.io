@@ -2,6 +2,21 @@
 layout: default
 ---
 
+
+
+## Blog Posts
+
+{% for post in site.posts %}
+  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+{% endfor %}
+
+
+
+
+
+
+
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
