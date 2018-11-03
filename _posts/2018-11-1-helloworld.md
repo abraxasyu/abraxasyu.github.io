@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Making a Blog
+tags: 
 ---
 
-What I did was fork the [minimal theme github repo](https://github.com/pages-themes/minimal), add the posts directory, and edit the index.md to reference the posts.
+All I did was fork the [minimal theme github repo](https://github.com/pages-themes/minimal), create a `_posts` directory, and edit  `index.md` to list the posts.
