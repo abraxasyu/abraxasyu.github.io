@@ -1,0 +1,60 @@
+---
+layout: post
+title: AMIA 2018, Day 3
+tags:
+---
+## Year-in-Review by James Cimino
+- adversarial attacks on clinical preditive models @ michigan
+- indiana - social determinants of health (jamia) - intersting bit is patient-mapping algorithm
+- a visual analytics approach for pattern-recognition in patient-generated data (jamia) - could be useful for sling
+- tom payne, voice note mobile app, JBI. compared minutes of notes transcribed post-midnight (Courtney can attest). 
+- yuan luo & j. starren - cnn-based word embedding (Seg-CNNs)
+- jama cardiology, afib detection using smartwatch by G. Tison, G. Marcus (sling)
+- taxonomy of CDS errors, by a. wright, d. sittig
+- k. danahey, p o'donnell, pharmacogenomics intuitive/simple use
+- PICU sepsis prediction algorithm (ran out of time and skipped over)
+- Question: do drug-relatd BPAs use classes? If so, what classes do they use? Look up BPA criteria doc.
+
+## Student dissertation awards
+- [Biomedical Relation Extraction from Context](https://www.amia.org/sites/default/files/Bethany-Percha-dissertation.pdf) by Bethany Percha Precision Health Enterprise at Mount Sinai Health System
+- [Semi-Supervised Learning for Electronic Phenotyping in Support of Precision Medicine](https://cs.nyu.edu/~halpern/files/halpern_thesis.pdf) by Yonatan Halpern Software Engineer at Google, Inc., David Sontag trainee.
+
+## S42: Oral Presentation - Predictive Models in Health Care
+- resnet + lstm for mortality
+- lightgbm for circulatory failure (had an interesting decay to median approach to imputation).\
+- lasso, rf, gbm for sepsis
+- log reg for vasopressor initiation. clinician action as gold standard. MIT.  lots of discourse on background, muddying the waters. Pre-emptive pressor init highly unlikely.
+- mlp transfer leaning from adult to peds, method called fine tuning, first train on adult, then further train on pedes. very prob/stats heavy. 
+- Concerns: variable LOS, hyperparam optimization, pred ahead (optimal prediction time), operationalization
+- idea, find longtiduinal risk score and apply kernel that emphasizes recency (linear or exp) and use AUC for 'real' risk score?
+
+## Missed Interesting Sessions
+- Intersection of data science and healthcare
+- CDS standardization
+- Barriers to CDS in LHS
+- Lots of oral presentations
+
+## Booth
+- M*Model is a dragon slayer (dictation) for BJH, owner is local to st. louis. Not only do they do speech to text, they also do semantic understanding. Why not use them instead of linguamatics?
+- cello is interested in making a fhir interface and fhir apps. having a useful sepsis prediction app might be usable across orgs. Speaking of which, it'd be nice to do a status assessment on BJC/Epic FHIR interface - what resources are production ready, which are incomplete, how do they differ from argonaut requqirements, etc.
+- I met the lead of prognosis inc, a database consulting firm for bjc rdc. He's an entrepreneur, seems to be severing ties with prognosis, in fact.
+- A bunch of undergrads dropped by - all bioinf. the phd herder was very nice.
+- spoke to circ failure girl from cornell/switzerland. talked a whole bunch about implementation details - resampling, imputation, index time, lead time, continuous/block, clin sig, rnn vs xgb vs lgbm, ontology-linking, generalizability, fhir, feature engineering. She's very close to phd grad, google/microsoft/etc. gan-based longitudinal synthetic data generation. maximum mean discrepancy for synth vs real. nlp.  
+- met protiva, talked OSU, courtney's doing great, she has a paper out under antibio rec grant that I need to read. 
+
+## Gaps
+- CNN
+- resnet
+- Bayesian network methods
+- cox survival models, time-to-failure models
+- non-negative matrix factorization
+
+## Discussion with Tom & Albert about duplicate order alert project
+- Question: what kind of duplicate order alerts are already available/live?
+- When information is returned to Epic through the FHIR interface, what actions are Epic able to perform? Need to look up docs.
+
+## Misc.
+* nasa genelab, could be used for library's bioinf workshop by Madhurima
+<img src="https://raw.githubusercontent.com/abraxasyu/abraxasyu.github.io/master/_images/space.jpg" width="400">
+*  dinner
+<img src="https://raw.githubusercontent.com/abraxasyu/abraxasyu.github.io/master/_images/halal.jpg" width="400">
